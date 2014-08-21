@@ -20,5 +20,11 @@
     <string name="title_activity_pedometer">Pedometer</string>
     <string name="subpedo">Pedometer</string>
     <string name="returnpedo">Return</string>
+    <string name="title_activity_location">Location</string>
+    <string name="subloca">Location</string>
+    <string name="returnloca">Return</string>
+    <string name="title_activity_posture">Posture</string>
+    <string name="subpost">Posture</string>
+    <string name="returnpost">Return</string>
 
 </resources>

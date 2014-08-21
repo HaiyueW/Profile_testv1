@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 public class Heartrate extends Activity {
 
@@ -22,7 +22,7 @@ public class Heartrate extends Activity {
     	messageButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(Heartrate.this, "Return to profile", Toast.LENGTH_LONG).show();
+				//Toast.makeText(Heartrate.this, "Return to profile", Toast.LENGTH_LONG).show();
 				//startActivity(new Intent(Heartrate.this, MainActivity.class));
 				finish();
 			}

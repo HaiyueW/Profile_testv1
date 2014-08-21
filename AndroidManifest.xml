@@ -30,6 +30,14 @@
             android:name=".Pedometer"
             android:label="@string/title_activity_pedometer" >
         </activity>
+        <activity
+            android:name=".Location"
+            android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name=".Posture"
+            android:label="@string/title_activity_posture" >
+        </activity>
     </application>
 
 </manifest>

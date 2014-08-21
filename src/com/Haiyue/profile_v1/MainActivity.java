@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -18,6 +18,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         setupMessageButton1();
         setupMessageButton2();
+        setupMessageButton3();
+        setupMessageButton4();
     }
 
     private void setupMessageButton1(){
@@ -25,7 +27,7 @@ public class MainActivity extends Activity {
     	messageButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(MainActivity.this, "Heart rate", Toast.LENGTH_LONG).show();
+				//Toast.makeText(MainActivity.this, "Heart rate", Toast.LENGTH_LONG).show();
 				startActivity(new Intent(MainActivity.this, Heartrate.class));
 			}
 		});	
@@ -36,8 +38,30 @@ public class MainActivity extends Activity {
     	messageButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(MainActivity.this, "Pedometer", Toast.LENGTH_LONG).show();
+				//Toast.makeText(MainActivity.this, "Pedometer", Toast.LENGTH_LONG).show();
 				startActivity(new Intent(MainActivity.this, Pedometer.class));
+			}
+		});	
+    }
+    
+    private void setupMessageButton3(){
+    	Button messageButton = (Button)findViewById(R.id.loca);
+    	messageButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Toast.makeText(MainActivity.this, "Location", Toast.LENGTH_LONG).show();
+				startActivity(new Intent(MainActivity.this, Location.class));
+			}
+		});	
+    }
+    
+    private void setupMessageButton4(){
+    	Button messageButton = (Button)findViewById(R.id.post);
+    	messageButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Toast.makeText(MainActivity.this, "Posture", Toast.LENGTH_LONG).show();
+				startActivity(new Intent(MainActivity.this, Posture.class));
 			}
 		});	
     }
